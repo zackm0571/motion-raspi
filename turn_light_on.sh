@@ -14,8 +14,7 @@ export CURRENT_TIME=$(date +"%H")
 echo $CURRENT_TIME
 echo $( date )
 
-if [[  ( $CURRENT_TIME > 0 && $CURRENT_TIME < 7 ) || $CURRENT_TIME > 18 ]]; then
-
+if (( $CURRENT_TIME < 7  ||  $CURRENT_TIME > 18 )); then
 curl  $BASE_API/$USER/lights/1/state -H CONTENT_JSON -X PUT -d '{"on":true}' 
 curl  $BASE_API/$USER/lights/3/state -H CONTENT_JSON -X PUT -d '{"on":true}' 
 curl  $BASE_API/$USER/lights/4/state -H CONTENT_JSON -X PUT -d '{"on":true}' 
