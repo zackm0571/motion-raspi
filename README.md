@@ -3,5 +3,7 @@ Small home automation project. If a raspberry pi with a camera detects motion, d
 Using https://github.com/Motion-Project/motion for motion detection.
 
 Usage:
-  chmod 755
-  ./start-motion.sh
+	
+	chmod 755
+	
+	./start-motion.sh
