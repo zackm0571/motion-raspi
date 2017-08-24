@@ -4,6 +4,6 @@ Using https://github.com/Motion-Project/motion for motion detection.
 
 Usage:
 	
-	chmod 755
+	chmod 755 start-motion.sh
 	
 	./start-motion.sh
